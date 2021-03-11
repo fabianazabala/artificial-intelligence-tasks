@@ -8,8 +8,6 @@ def plotTesting():
  plt.show()
 
 
-##plot([x], y, [fmt], *, data=None, **kwargs)
-##plot([x], y, [fmt], [x2], y2, [fmt2], ..., **kwargs)
 """ def listTesting():
     list1 = [1, 2, 3, 4, 5]
     list2 = [4, 5, 3, 7, 6]
