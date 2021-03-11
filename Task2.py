@@ -9,10 +9,16 @@ df = pd.DataFrame(data, columns=['total_bill', 'tip', 'sex'])
 
 print(df)
 
-df.to_csv('file.csv', index = False)
+print("___________________________________________________________________")
+df.to_csv('file.csv', index=False)
 
-mean = df.mean()
+mean = df['total_bill'].mean()
 print('\nMean\n------')
 print(mean)
 
-df.loc[:,"total_bill"].mean()
+df.loc[:, "total_bill"].mean()
+
+print("___________________________________________________________________")
+print(df['tip'].max())
+
+print("___________________________________________________________________")
