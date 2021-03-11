@@ -2,11 +2,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plotTesting():
- vec1 = np.array([1, 2, 3, 4, 5])
- vec2 = np.array([4, 5, 3, 7, 6])
- plt.plot(vec1,vec2)
+ x = np.array([1, 2, 3, 4, 5])
+ y = np.array([4, 5, 3, 7, 6])
+ plt.plot(y, x, 'bo')
  plt.show()
 
+
+##plot([x], y, [fmt], *, data=None, **kwargs)
+##plot([x], y, [fmt], [x2], y2, [fmt2], ..., **kwargs)
 """ def listTesting():
     list1 = [1, 2, 3, 4, 5]
     list2 = [4, 5, 3, 7, 6]
