@@ -44,9 +44,18 @@ def breadth_first_search():
 
         knapsack = queue.pop(0)
 
+        #showing changes on the console
+        print("Checking element {}".format(knapsack))
+
         if end_state(knapsack):
             print("We have  found a solution!")
-            print(knapsack)
+            total_weight = 0
+            total_value = 0
+            for i in knapsack:
+                print(items[i])
+                total_weight += weights[i]
+                total_value += values[i]
+            print("For a total weight of {} and a total value of {}".format(total_weight, total_value))
             return True
 
 
