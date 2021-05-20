@@ -1,6 +1,8 @@
 from copy import copy
 import time
 
+#the procedure starts by creating a variable calles num_items, following by an array of strings
+# that represents the items.
 num_items = 4
 items = ["book",
          "vacuum",
@@ -12,6 +14,7 @@ weights = [1, 15, 6, 14]
 limit = 20
 min_val = 120
 
+#the set of items is included in the knapsack
 def item_is_in_knapsack(it, knapsack):
     for i in knapsack:
         if i == it:
